@@ -11,3 +11,6 @@
 - HTML
 - CSS [style/Presentation]
 - PHP [Logic/Working of the app]
+
+## Notice:
+- Make sure to import the mysqli database file (phplogindb.sql)
