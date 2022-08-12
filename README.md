@@ -1,4 +1,4 @@
-# PHP Login System
+# PHP Login System (Procedural PHP)
  This is a basic PHP Login system.
 
 ## Basic Features:
