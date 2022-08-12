@@ -1,5 +1,5 @@
 # PHP Login System
- This is a PHP Login system.
+ This is a basic PHP Login system.
 
 ## Basic Features:
 - Sign in
