@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Header */
+nav {
+    padding: 20px 100px;
+    background: #111;
+}
+
+nav .wrapper .logo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav a.nav-menu {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 16px;
+    border-bottom: 2px solid transparent;
+    transition: .3s ease;
+}
+
+nav a.nav-menu:hover {
+    border-bottom-color: #fff;
+}
+
+nav .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .wrapper ul {
+    display: flex;
+}
+
+button a {
+    color: #6665ee;
+    font-weight: 500;
+}
+
+button a:hover {
+    text-decoration: none;
+}
+
+/* Home */
+.index-intro {
+    padding: 50px 100px;
+    text-align: center;
+}
+
+.index-intro h1 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.index-categories {
+    padding: 0 100px;
+}
+
+.index-categories h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.index-categories .index-categories-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: #fff;
+}
+
+.index-categories .index-categories-list div {
+    background-color: aliceblue;
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+}
+
+/* Sign Up */
+.signup-form {
+    padding: 50px 100px;
+}
+
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.signup-form form input {
+    width: 100%;
+    border: 1px solid #dddddd;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.signup-form form input:focus {
+    border-color: #111;
+}
+
+.signup-form form input::placeholder {
+    color: #8d8d8d;
+}
+
+.signup-form form button[type="submit"] {
+    width: 100%;
+    background: #111;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.signup-form p {
+    text-align: center;
+    margin: 10px 0;
+    color: #6665ee;
+}
+
+p.member-reg {
+    color: #2a2a2a;
+}
+
+p.member-reg a {
+    border-bottom: 1px solid #2a2a2a;
+}
