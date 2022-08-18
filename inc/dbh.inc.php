@@ -1,9 +1,9 @@
 <?php
 
 $serverName = 'localhost';
-$dbUsername = 'devfahad_phploginuser';
-$dbPassword = 'phploginuser123';
-$dbName     = 'devfahad_phplogin';
+$dbUsername = 'root';
+$dbPassword = '';
+$dbName     = 'phplogindb';
 
 // DB connection
 $conn = mysqli_connect( $serverName, $dbUsername, $dbPassword, $dbName );
