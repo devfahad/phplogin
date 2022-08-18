@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 12, 2022 at 02:19 PM
+-- Generation Time: Aug 18, 2022 at 04:59 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.6
 
@@ -20,6 +20,27 @@ SET time_zone = "+00:00";
 --
 -- Database: `phplogindb`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pwdreset`
+--
+
+CREATE TABLE `pwdreset` (
+  `pwdResetId` int(11) NOT NULL,
+  `pwdResetEmail` text NOT NULL,
+  `pwdResetSelector` text NOT NULL,
+  `pwdResetToken` longtext NOT NULL,
+  `pwdResetExpires` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `pwdreset`
+--
+
+INSERT INTO `pwdreset` (`pwdResetId`, `pwdResetEmail`, `pwdResetSelector`, `pwdResetToken`, `pwdResetExpires`) VALUES
+(1, 'emon@gmail.com', '77a36165436829eb', '$2y$10$HQRQXKo.QX8w/bhdefBe0ebltrpy4gxaV1TpRpg4teMF0sBhbkWHi', '1660828166');
 
 -- --------------------------------------------------------
 
@@ -49,6 +70,12 @@ INSERT INTO `users` (`usersId`, `usersName`, `usersEmail`, `usersUid`, `usersPwd
 --
 
 --
+-- Indexes for table `pwdreset`
+--
+ALTER TABLE `pwdreset`
+  ADD PRIMARY KEY (`pwdResetId`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -59,10 +86,16 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `pwdreset`
+--
+ALTER TABLE `pwdreset`
+  MODIFY `pwdResetId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `usersId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `usersId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
