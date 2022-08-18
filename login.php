@@ -9,6 +9,15 @@
         </form>
 
         <p class="member-reg">Not a member? <a href="signup.php">Sign up</a></p>
+        <p class="member-reg">Forgot your password? <a href="reset-password.php">Reset</a></p>
+
+        <?php
+            if( isset( $_GET['newpwd'] ) ) :
+                if( $_GET['newpwd'] == 'passwordupdated' ) :
+                    echo '<p class="success">Your password has ben set!</p>';
+                endif;
+            endif;
+        ?>
 
         <?php
         if ( isset( $_GET['error'] ) ) {

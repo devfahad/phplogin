@@ -1,14 +1,14 @@
-<?php 
+<?php
 
 $serverName = 'localhost';
-$dbUsername = 'root';
-$dbPassword = '';
-$dbName = 'phplogindb';
+$dbUsername = 'devfahad_phploginuser';
+$dbPassword = 'phploginuser123';
+$dbName     = 'devfahad_phplogin';
 
 // DB connection
-$conn = mysqli_connect($serverName, $dbUsername, $dbPassword, $dbName);
+$conn = mysqli_connect( $serverName, $dbUsername, $dbPassword, $dbName );
 
-// If connection fails
-if(!$conn) {
-    die('Connection failed: ' . mysqli_connect_error());
+// Check connection
+if ( !$conn ) {
+    die( 'Connection failed: ' . mysqli_connect_error() );
 }

@@ -147,3 +147,8 @@ p.member-reg {
 p.member-reg a {
     border-bottom: 1px solid #2a2a2a;
 }
+
+p.reset-inst {
+    color: #747474;
+    font-style: italic;
+}
