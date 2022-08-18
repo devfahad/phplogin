@@ -1,4 +1,4 @@
-# PHP Login System
+# PHP Login System (Procedural PHP)
  This is a basic PHP Login system.
 
 ## Basic Features:
@@ -11,3 +11,6 @@
 - HTML
 - CSS [style/Presentation]
 - PHP [Logic/Working of the app]
+
+## Notice:
+- Make sure to import the mysqli database file (phplogindb.sql)
